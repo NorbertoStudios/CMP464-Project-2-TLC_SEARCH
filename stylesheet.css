@@ -117,3 +117,19 @@ nav a:hover{
 .space{
     padding: 10px 10px 20% 10px;
 }
+
+.search-form {
+    margin: 0 0 2%;
+  }
+  .complete-green {
+    font-weight: 700;
+    color: green;
+  }
+  .incomplete-red {
+    font-weight: 700;
+    color: red;
+  }
+  .search {
+    margin-top: 5%;
+  }
+

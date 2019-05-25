@@ -35,8 +35,7 @@
         </div>
     </div>
 
-
-
+    
     <div class="col s12 m2">
         <div id="app" class="z-depth-4 grey lighten-4">
             <div class="space">
@@ -57,25 +56,35 @@
                     <v-alert :value="true" type="success" class="red">
                         Success
                     </v-alert>
+                    <strong>Current Status: </strong>
+                    <span class="complete-green" v-if="result.status === 'Complete'">Complete</span>
+                    <span class="incomplete-red" v-else>Incomplete</span>
                     <br>
-                    <strong>Application No:</strong> {{ result.app_no }}
+                    <strong>Drug Test: </strong>
+                    <span class="complete-green" v-if="result.drug_test === 'Complete'">Complete</span>
+                    <span class="incomplete-red" v-else>Incomplete</span>
                     <br>
-                    <strong>Current Status:</strong> {{ result.status }}
+                    <strong>Wav Course: </strong>
+                    <span class="complete-green" v-if="result.wav_course === 'Complete'">Complete</span>
+                    <span class="incomplete-red" v-else>Incomplete</span>
                     <br>
-                    <strong>Drug Test:</strong> {{ result.drug_test }}
+                    <strong>Defensive Driving: </strong>
+                    <span class="complete-green" v-if="result.defensive_driving === 'Complete'">Complete</span>
+                    <span class="incomplete-red" v-else>Incomplete</span>
                     <br>
-                    <strong>Wav Course:</strong> {{ result.wav_course }}
+                    <strong>Driver Exam: </strong>
+                    <span class="complete-green" v-if="result.driver_exam === 'Complete'">Complete</span>
+                    <span class="incomplete-red" v-else>Incomplete</span>
                     <br>
-                    <strong>Defensive Driving:</strong> {{ result.defensive_driving }}
+                    <strong>Medical Clearance: </strong>
+                    <span class="complete-green" v-if="result.medical_clearance_form === 'Complete'">Complete</span>
+                    <span class="incomplete-red" v-else>Incomplete</span>
                     <br>
-                    <strong>Driver Exam:</strong> {{ result.driver_exam }}
-                    <br>
-                    <strong>Medical Clearance:</strong> {{ result.medical_clearance_form }}
-                    <br>
-                    <strong>Other Requirements:</strong>
+                    <strong>Other Requirements: </strong>
                     <br>
                     {{ result.other_requirements }}
                 </div>
+
 
 
                 <div v-show="notFound">
