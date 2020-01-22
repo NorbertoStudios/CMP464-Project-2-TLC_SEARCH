@@ -6,7 +6,7 @@ We were able to retrive the new TLC applicants using their application reference
 using Vue.js and axios to retrive the query in a better way
 And Materialize and Veutify to improve the visibility 
 
-See the Live page in this URL <a src="https://norbertostudios.github.io/CMP464-Project-2-TLC_SEARCH/">CLICK HERE</a>
+See the Live page in this URL <a href="https://norbertostudios.github.io/CMP464-Project-2-TLC_SEARCH/">CLICK HERE</a>
 
 NYC Open Data 
 https://data.cityofnewyork.us/Transportation/TLC-New-Driver-Application-Status/dpec-ucu7/data
